@@ -1,0 +1,149 @@
+/* Global Rules */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* text-transform: capitalize; */
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+:root {
+    --red: hsla(0, 78%, 62%);
+    --cyan: hsla(180, 62%, 55%);
+    --blue: hsla(212, 86%, 64%);
+    --yellow: hsla(34, 97%, 64%);
+    --VeryDarkBlue: hsl(234, 12%, 34%);
+    --GrayishBlue: hsl(229, 6%, 66%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --transition: .3s;
+    --transition2: ease 0.3s;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.3;
+    margin: -.625rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Start Styling Container */
+.container {
+    margin: 5rem;
+}
+/* Start Styling Hero Section */
+.landing h1, h2 {
+    max-width: 33.75rem;
+    margin: 0 auto;
+    font-weight: 300;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    text-align: center;
+    letter-spacing: .0156rem;
+    color: var(--VeryDarkBlue);
+}
+.landing h1 {
+    color: var(--VeryDarkBlue);
+}
+.landing h2 {
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+}
+.landing h2::after {
+    content: "";
+    display: flex;
+    margin: 0 auto;
+    height: .25rem;
+    margin-top: .25rem;
+    transition: .3s;
+    position: absolute;
+}
+.landing p {
+    max-width: 33.75rem;
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: .9375rem;
+    line-height: 1.5625rem;
+    text-align: center;
+    color: var(--GrayishBlue);
+    padding-top: 1rem;
+}
+
+/* Start Styling Cards */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 1.875rem;
+    max-width: 69.375rem;
+    padding-top: 4rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 21.875rem;
+    gap: 1.25rem;
+    border-radius: .5rem;
+    background: var(--VeryLightGray);
+    border: .0625rem solid var(--VeryLightGray);
+    box-shadow: 0rem .9375rem 1.875rem -.6875rem rgba(131, 166, 210, .5);
+    position: relative;
+}
+.cyan-card::before,
+.red-card::before,
+.yellow-card::before,
+.blue-card::before {
+    content: "";
+    width: 100%;
+    height: .3125rem;
+    border-radius: .5rem .5rem 0 0;
+    position: absolute;
+}
+.card h3 {
+    color: var(--VeryDarkBlue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+}
+.card p {
+    font-weight: 600;
+    font-size: .8125rem;
+    line-height: 1.4375rem;
+    letter-spacing: .0056rem;
+    color: var(--VeryDarkBlue);
+    opacity: .5;
+    padding-top: .375rem;
+}
+.card-img {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2.375rem;
+}
+.centering .yellow-card{
+    margin: 30px 0;
+}
+.content {
+    padding: 2rem;
+}
+.red-card::before {
+    background: var(--red);
+}
+
+.blue-card::before {
+    background: var(--blue);
+}
+
+.cyan-card::before {
+    background: var(--cyan);
+}
+
+.yellow-card::before {
+    background: var(--yellow);
+}
+/* End Styling Container */

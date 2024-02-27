@@ -1,0 +1,25 @@
+@media (max-width: 47.9375rem) {
+    .container h1 {
+        font-size: 1.25rem;
+    }
+    .container h2 {
+        font-size: 1.125rem;
+    }
+    .container p {
+        font-size: .875rem;
+    }
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .red-card:hover {
+        transform: translateX(1.25rem);
+        transition: cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+        }
+    
+    .yellow-card:hover {
+        transform: translateX(-1.25rem);
+        transition: cubic-bezier(0.77, 0, 0.175, 1) 0.4s;
+    }
+}

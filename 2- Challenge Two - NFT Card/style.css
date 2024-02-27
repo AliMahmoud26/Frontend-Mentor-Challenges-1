@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@300;400;700&family=Open+Sans:wght@400;500;600;700;800&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Public+Sans:wght@100;300;500;600;800;900&family=Red+Hat+Display:wght@500;700;900&family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: .4s;
+}
+
+body {
+  background: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Start styling the card component */
+.card {
+  max-width: 21.875rem;
+  margin: 0 auto;
+}
+
+.card .container {
+  margin: 2rem 1rem;
+  padding: 1.25rem;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 1rem;
+  box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+}
+
+/* The Beginning: The most important part to me in this design */
+.container .header-img {
+  border-radius: .875rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .header-img img {
+  width: 100%;
+  display: block;
+}
+/* I've done this many times and i forgot how to do it */
+.container .header-img .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+.container .header-img .overlay img {
+  position: absolute;
+  width: 3.125rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-img:hover .overlay{
+  display: block;
+}
+/* The End: The most important part to me in this design */
+.container .info {
+  padding: 1.25rem 0;
+}
+
+.container .info a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 1.25rem 0;
+}
+
+.container .info a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.container .info p {
+  color: hsl(215, 51%, 70%);
+  line-height: 1.4;
+  padding: 1.25rem 0;
+}
+
+.container .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.eth, .days {
+  display: flex;
+  align-items: center;
+}
+
+.flex .eth p {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  padding-left: .4rem;
+}
+
+.flex .days p {
+  padding-left: .4rem;
+}
+
+hr{
+  border-color: hsl(215, 32%, 27%);
+}
+
+.container .author {
+  display: flex;
+  align-items: center;
+  padding-top: .25rem;
+  margin-bottom: -25px;
+}
+
+.container .author img {
+  width: 2rem;
+  border-radius: 50%;
+  border: .0625rem solid #fff;
+  margin-right: 1rem;
+}
+
+.container .author p a {
+  color: #fff;
+  font-size: 1rem;
+  margin-left: .25rem;
+}
+
+.container .author p a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution { 
+  font-size: .875rem; 
+  text-align: center; 
+  color: #fff; 
+}
+  .attribution a { 
+    color: hsl(178, 100%, 50%); 
+}
+/* End styling the card component */
