@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Inter:wght@400;700;800&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca:wght@300;400;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;300;500;600;800;900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("images/bg-pattern-top.svg"),url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat,no-repeat;
+    background-position: -100px -350px, 820px 350px;
+    background-size: contain, contain;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container .card {
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 26rem;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0 0 0 / 40%);
+    text-align: center;
+    border-radius: 10px;
+}
+.container .card .image img {
+    max-width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.container .card-content img {
+    margin-top: -60px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+.container .card-content .text {
+    margin: 16px 0 30px;
+}
+.container .card-content .text h3 {
+    color: hsl(229, 23%, 23%);
+    font-size: 1.35rem;
+}
+.container .card-content .text h3 span {
+    color: hsl(0, 0%, 59%);
+    font-size: 1rem;
+    font-weight: normal;
+}
+.container .card-content .text .country {
+    color: hsl(0, 0%, 59%);
+    margin-top: 10px;
+}
+.container .card-content hr {
+    max-width: 100%;
+    display: block;
+    border-color: hsl(227, 10%, 46%, 10%);
+}
+.container .card-content .stats {
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .card-content .stats .stat h2 {
+    color: hsl(229, 23%, 23%);
+    font-size: 20px;
+}
+.container .card-content .stats .stat span {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 2.4px;
+}

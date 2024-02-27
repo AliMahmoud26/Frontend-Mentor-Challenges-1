@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Inter:wght@400;700;800&family=Lexend+Deca:wght@300;400;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;300;500;600;800;900&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container .card {
+    background-color: var(--color-white);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 26rem;
+    margin: auto;
+    box-shadow: 0 5px 20px rgba(0 0 0 / 20%);
+    text-align: center;;
+}
+.container .card img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.container .card .text {
+    padding: 0 4rem 1.8rem;
+}
+.container .card .text h2 {
+    color: hsl(223, 47%, 23%);
+    margin-top: 2.25rem;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+.container .card .text p {
+    color: hsl(224, 23%, 55%);
+    margin-top: 1.25rem;
+    line-height: 1.4;
+}
+.card .subscribe {
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 1.875rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card .subscribe .plan {
+    display: flex;
+}
+.card .subscribe .plan img {
+    margin-right: .975rem;
+}
+.card .subscribe .plan .price {
+    margin-top: .125rem;
+}
+.card .subscribe .plan .price h5 { 
+    color: hsl(223, 47%, 23%);
+    margin-bottom: .375rem;
+    font-weight: 600;
+    font-size: .875rem;
+}
+.card .subscribe .plan .price span {
+    color: hsl(224, 23%, 55%);
+}
+.card .subscribe a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 600;
+    transition: all .4s ease;
+}
+.card .subscribe a:hover {
+    color: hsl(224, 23%, 55%);
+    text-decoration: none;
+    font-weight: 600;
+}
+.card .btn {
+    padding-top: 1.75rem;
+    display: flex;
+    flex-direction: column;
+}
+.card .btn a {
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+}
+.card .btn a:first-of-type {
+    color: #fff;
+    background-color: hsl(245, 75%, 52%);
+    text-align: center;
+    font-weight: 500;
+    padding: .875rem 2rem;
+    border-radius: 10px;
+    box-shadow: .3125rem .3125rem .625rem rgb(0 0 0 / 40%);
+    transition: all .4s ease;
+}
+.card .btn a:first-of-type:hover {
+    background-color: hsl(223, 47%, 23%);
+}
+.card .btn a:nth-child(2) {
+    color: hsl(223, 47%, 23%);
+    font-size: .875rem;
+    font-weight: 600;
+}

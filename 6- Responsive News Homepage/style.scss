@@ -1,0 +1,10 @@
+// Importing global files
+@use 'sass/globals/global';
+@use 'sass/globals/mixins';
+@use 'sass/globals/variables';
+
+
+// Importing sections files
+@use 'sass/sections/header';
+@use 'sass/sections/hero';
+@use 'sass/sections/features';

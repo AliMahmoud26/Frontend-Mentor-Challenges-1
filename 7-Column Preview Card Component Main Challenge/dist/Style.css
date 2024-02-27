@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Inter:wght@400;700;800&family=Lexend+Deca:wght@300;400;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;300;500;600;800;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.container {
+  padding: 10px 24px;
+}
+.container .card-content {
+  display: flex;
+  max-width: 950px;
+  max-height: 510px;
+}
+.container .card-content .card {
+  padding: 50px;
+}
+.container .card-content .card i {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+}
+.container .card-content .card h2 {
+  color: hsl(0deg, 0%, 95%);
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-font-weight: 700;
+}
+.container .card-content .card .para {
+  max-width: 100%;
+}
+.container .card-content .card .para p {
+  color: hsla(0deg, 0%, 100%, 0.75);
+  margin-top: 30px;
+  line-height: 1.6;
+}
+.container .card-content .card .btn {
+  background-color: hsl(0deg, 0%, 95%);
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 80px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid hsl(0deg, 0%, 95%);
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+.container .card-content .card .btn:hover {
+  background-color: inherit;
+  color: hsl(0deg, 0%, 95%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+}
+.container .card-content .card-1 {
+  background-color: hsl(31deg, 77%, 52%);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.container .card-content .card-1 .btn {
+  color: hsl(31deg, 77%, 52%);
+}
+.container .card-content .card-2 {
+  background-color: hsl(184deg, 100%, 22%);
+}
+.container .card-content .card-2 .btn {
+  color: hsl(184deg, 100%, 22%);
+}
+.container .card-content .card-3 {
+  background-color: hsl(179deg, 100%, 13%);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.container .card-content .card-3 .btn {
+  color: hsl(179deg, 100%, 13%);
+}
+
+@media (max-width: 767px) {
+  .card-content {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .card {
+    border-radius: 0px;
+  }
+  .card-1 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+  .card-3 {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+}/*# sourceMappingURL=Style.css.map */
